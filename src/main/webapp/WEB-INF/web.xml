@@ -1,0 +1,11 @@
+<web-app 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true" >
+ 
+<!-- 用maven创建的webapp需要修改servelet版本，可以参照apache的安装目录 I:\javaservice\apache-tomcat-8.5.33-windows-x64\apache-tomcat-8.5.33\webapps\examples\WEB-INF
+下的web.xml文件的版本设置，修改servelet版本为3.1-->
+
+</web-app>
