@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!-- 最基本的logbak配置，可以看官网打印更加详细的logback配置https://logback.qos.ch/manual/configuration.html -->
 <configuration>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">

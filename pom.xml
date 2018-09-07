@@ -45,11 +45,11 @@
       <artifactId>logback-classic</artifactId>
       <version>1.1.1</version>
     </dependency>
-<!-- 数据库的相关依赖 -->
+<!-- 数据库的相关依赖,数据库的相关连接驱动一定要和自己安装的数据库的版本要一致 -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.38</version>
+      <version>8.0.11</version>
     </dependency>
 
     <dependency>
@@ -141,7 +141,7 @@
       <version>4.1.7.RELEASE</version>
     </dependency>
 
-    <!--redis客户端：jedis-->
+    <!--redis客户端：jedis，配置访问redis服务的客户端-->
     <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
     <dependency>
       <groupId>redis.clients</groupId>
@@ -162,7 +162,11 @@
       <artifactId>protostuff-runtime</artifactId>
       <version>1.6.0</version>
     </dependency>
-
+    <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging-api</artifactId>
+        <version>1.1</version>
+	</dependency>
   </dependencies>
 
   <build>
