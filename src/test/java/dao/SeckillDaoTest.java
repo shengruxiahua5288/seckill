@@ -12,7 +12,9 @@ import entity.Seckill;
 import javax.annotation.Resource;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -54,6 +56,21 @@ public class SeckillDaoTest {
         for(Seckill seckill:seckills){
             System.out.println(seckill);
         }
+    }
+    
+    @Test
+    public void killByProducedure()throws Exception{
+    	    Date killtime=new Date();
+			Map<String,Object>map=new HashMap<String,Object>();
+			//执行数据库的存储过程
+			map.put("seckillId",1005L);
+			map.put("userPhone",15112534641L);
+			map.put("killTime",killtime);
+			//未执行之前，返回的结果为null
+			map.put("result",null);
+    	    seckillDao.killByProducedure(map);
+    	    System.out.print("killByProducedure()"+map);
+        
     }
 
 }
